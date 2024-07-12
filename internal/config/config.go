@@ -6,21 +6,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-type AppConfig struct {
-	Port        string
-	Env         string
-	ServiceName string
-}
-
-type DbConfig struct {
-	Url string
-}
-
-type Config struct {
-	App AppConfig
-	Db  DbConfig
-}
-
 func LoadConfig() (*Config, error) {
 	if os.Getenv("APP_ENV") == "" {
 		err := godotenv.Load(".env")

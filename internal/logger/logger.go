@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/macgeargear/kokoro-quiz/config"
+	"github.com/macgeargear/kokoro-quiz/internal/config"
 	"go.uber.org/zap"
 )
 

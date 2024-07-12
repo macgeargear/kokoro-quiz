@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/macgeargear/kokoro-quiz/config"
+	"github.com/macgeargear/kokoro-quiz/internal/config"
 	"github.com/macgeargear/kokoro-quiz/internal/database"
 	"github.com/macgeargear/kokoro-quiz/internal/logger"
 	"go.uber.org/zap"

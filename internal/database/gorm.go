@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/macgeargear/kokoro-quiz/config"
+	"github.com/macgeargear/kokoro-quiz/internal/config"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	gormLogger "gorm.io/gorm/logger"
