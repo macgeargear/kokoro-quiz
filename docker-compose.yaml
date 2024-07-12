@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15.1-alpine3.17
+    container_name: db
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: kokoro-quiz
+    networks:
+      - kokoro-quiz
+    volumes:
+      - ./volumes/postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+networks:
+  kokoro-quiz:
+    name: kokoro-quiz
